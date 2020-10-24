@@ -14,6 +14,11 @@ segundoString = 'natal';
 concatenacion = primerString + segundoString;
 console.log(concatenacion);
 
-
 /*Crear dos variables de tipo String y sumar el largo de cada variable (cantidad de letras del string) guardando el resultado la suma una 3er variable (utilizar length).
 */
+
+var sumaCadena
+
+sumaCadena = primerString.length + segundoString.length;
+
+console.log(sumaCadena);
