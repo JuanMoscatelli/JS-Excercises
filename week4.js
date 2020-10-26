@@ -40,3 +40,17 @@ console.log(d);
 
 /*Crear una variable de tipo string con al menos 2 palabras largas (10 caracteres y algún espacio entre medio). Utilizar los métodos de los ejercicios anteriores para generar un nuevo string que tenga la primera letra de ambas palabras en mayúscula y las demás letras en minúscula (utilizar indexOf, substring, toUpperCase, toLowerCase y el operador +).
 */
+
+var e, f, g,h,i,j,k;
+e = "hypothetically undestructible";
+
+f = e.indexOf(' ');
+console.log(f);
+g = e.substring(1,14);
+h = e.substring(16,29);
+i=e.substring(0,1);
+j=e.substring(15,16);
+console.log(g);
+console.log(h);
+k= i.toUpperCase() + g + " " + j.toUpperCase() + h;
+console.log(k);
