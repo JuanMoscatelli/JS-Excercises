@@ -1,56 +1,16 @@
-
-/*Strings
-Crear una variable de tipo string con al menos 10 caracteres y convertir todo el texto en mayúscula (utilizar toUpperCase).*/
-var tenWords;
-tenWords = 'animalistic';
-console.log(tenWords.toUpperCase());
-
-/*Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con los primeros 5 caracteres guardando el resultado en una nueva variable (utilizar substring).*/
-var newWord;
-newWord = tenWords.substring(0,5);
-console.log(newWord);
-
-
-/*
-Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con los últimos 3 caracteres guardando el resultado en una nueva variable (utilizar substring).
+/*Arrays
+Dado el siguiente array: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"] mostrar por consola los meses 5 y 11 (utilizar console.log)
 */
-var last3Words;
-last3Words= tenWords.substring(8,11);
-console.log(last3Words);
+var myarray = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+console.log(myarray[5]);
+console.log(myarray[11]);
 
 
-/*
-Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con la primera letra en mayúscula y las demás en minúscula. Guardar el resultado en una nueva variable (utilizar substring, toUpperCase, toLowerCase y el operador +).
+
+/*Ordenar el array de meses alfabéticamente y mostrarlo por consola (utilizar sort).
+Agregar un elemento al principio y al final del array (utilizar unshift y push).
+Quitar un elemento del principio y del final del array (utilizar shift y pop).
+Invertir el orden del array (utilizar reverse)
+Unir todos los elementos del array en un único string donde cada mes este separado por un guión - (utilizar join).
+Crear una copia del array de meses que contenga desde Mayo hasta Noviembre (utilizar slice)
 */
-var wordOne,a,b;
-a = tenWords.toUpperCase();
-b = tenWords.toLowerCase();
-wordOne = a.substring(0,1) + b.substring(1,11);
-console.log(wordOne);
- 
-
-
-/*
-Crear una variable de tipo string con al menos 10 caracteres y algún espacio en blanco. Encontrar la posición del primer espacio en blanco y guardarla en una variable (utilizar indexOf).
-*/
-var c, d;
-c = "Big Cat";
-d = c.indexOf(" ");
-console.log(d);
-
-/*Crear una variable de tipo string con al menos 2 palabras largas (10 caracteres y algún espacio entre medio). Utilizar los métodos de los ejercicios anteriores para generar un nuevo string que tenga la primera letra de ambas palabras en mayúscula y las demás letras en minúscula (utilizar indexOf, substring, toUpperCase, toLowerCase y el operador +).
-*/
-
-var e, f, g,h,i,j,k;
-e = "hypothetically undestructible";
-
-f = e.indexOf(' ');
-console.log(f);
-g = e.substring(1,14);
-h = e.substring(16,29);
-i=e.substring(0,1);
-j=e.substring(15,16);
-console.log(g);
-console.log(h);
-k= i.toUpperCase() + g + " " + j.toUpperCase() + h;
-console.log(k);
