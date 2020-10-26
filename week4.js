@@ -1,14 +1,13 @@
-/*
-For
-Crear un array que contenga 5 palabras y recorrer dicho array utilizando un bucle for de JavaScript para mostrar una alerta utilizando cada una de las palabras.
-*/
-
-var myColors = ['Rosa','Verde','Gris','Negro','Azul'];
-for (var indexMyColors = 0; indexMyColors < 5; indexMyColors++){
-    alert(myColors[indexMyColors]);
-}
 /*Al array anterior convertir la primera letra de cada palabra en mayúscula y mostrar una alerta por cada palabra modificada.*/
 
+
+var myColors = ['rosa','verde','gris','negro','azul'], indexMyColors, color, firstLetter;
+for (indexMyColors = 0; indexMyColors < 5; indexMyColors++){
+    color = myColors[indexMyColors];
+    firstLetter = color.slice(0,1);
+    color = color.replace(firstLetter,firstLetter.toUpperCase());
+    alert(color);
+}
 
 /*
 Crear una variable llamada “sentence” que tenga un string vacío, luego al array del punto a) recorrerlo con un bucle for para ir guardando cada palabra dentro de la variable sentence. Al final mostrar una única alerta con la cadena completa.
